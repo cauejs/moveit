@@ -3,6 +3,7 @@
     align-items: center;
 
     margin-bottom: 4rem;
+
 }
 
 
@@ -29,4 +30,7 @@ span.currentExperience {
     position: absolute;
     top: 12px;
     transform: translateX(-50%);
+}
+span.currentExperience, .experienceBar > div > div {
+    transition: all 0.5s ease;
 }
