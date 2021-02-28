@@ -15,33 +15,83 @@
     background: var(--white);
     width: 100%;
     max-width: 400px;
-    padding: 2rem 3rem;
+    /* padding: 2rem 3rem; */
     border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
     text-align: center;
     position: relative;
 }
 
 .container header {
+    padding: 2.5rem 3rem 0;
+}
+
+.container header div {
     font-size: 8.75rem;
     font-weight: 600;
+    letter-spacing: -.5rem;
     color: var(--blue);
     background: url('/icons/levelup.svg') no-repeat center;
     background-size: contain;
 }
 
-.container strong {
-    font-size: 2.5rem;
+.container main {
+    padding: 0 3rem 2.5rem;
+}
+
+.container main strong {
+    font-size: 2rem;
     color: var(--title);
 }
 
-.container p {
+.container main p {
     font-size: 1.25rem;
     color: var(--text);
     margin-top: 0.25rem;
 }
 
-.container button {
+.container footer {
+    display: grid;
+    grid-template-columns: 100%;
+
+    border-top: solid 1px var(--gray-line);
+}
+
+.container footer button {
+    height:  4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blue-twitter);
+    background-color: var(--blue-twitter-light);
+    
+    transition: color 0.2s, background 0.2s;
+}
+
+.container footer button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin-left: .75rem;
+}
+
+.container footer button svg path {
+    fill: currentColor;
+}
+
+.container footer button:hover {
+    color: var(--white);
+    background-color: var(--blue-twitter);
+}
+
+.container > button {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
